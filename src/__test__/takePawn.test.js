@@ -59,24 +59,24 @@ describe('takePawn.js', () => {
     const result = testNorthWestPawn.takePawn();
     expect(result).toEqual(true);
   });
-  // test('Returned true if you can take a pawn up and right', () => {
-  //   const result = testNorthEastPawn.takePawn();
-  //   expect(result).toEqual(true);
-  // });
-  // test('Returned true if you can take a pawn down and left', () => {
-  //   const result = testSouthWestPawn.takePawn();
-  //   expect(result).toEqual(true);
-  // });
-  // test('Returned true if you can take a pawn down and right', () => {
-  //   const result = testSouthEastPawn.takePawn();
-  //   expect(result).toEqual(true);
-  // });
-  // test('Returned false if the 2dArray is not the right shape', () => {
-  //   const result = testEmptyBoard.takePawn();
-  //   expect(result).toEqual(false);
-  // });
-  // test('Returned false if you cannot take the pawn with the bishop', () => {
-  //   const result = testUntakeablePawn.takePawn();
-  //   expect(result).toEqual(false);
-  // });
+  test('Returned true if you can take a pawn up and right', () => {
+    const result = testNorthEastPawn.takePawn();
+    expect(result).toEqual(true);
+  });
+  test('Returned true if you can take a pawn down and left', () => {
+    const result = testSouthWestPawn.takePawn();
+    expect(result).toEqual(true);
+  });
+  test('Returned true if you can take a pawn down and right', () => {
+    const result = testSouthEastPawn.takePawn();
+    expect(result).toEqual(true);
+  });
+  test('Returned false if the 2dArray is not the right shape', () => {
+    const result = testEmptyBoard.takePawn();
+    expect(result).toEqual(false);
+  });
+  test('Returned false if you cannot take the pawn with the bishop', () => {
+    const result = testUntakeablePawn.takePawn();
+    expect(result).toEqual(false);
+  });
 });
